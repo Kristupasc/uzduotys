@@ -1,2 +1,0 @@
-# uzduotys
-veikia
