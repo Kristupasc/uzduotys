@@ -22,13 +22,13 @@ def exists_txt():
 def exists_reztxt():
     """U1rez.txt egzistuoja."""
     check50.exists("U1rez.txt")
+    
 @check50.check(exists)
-
 def test0():
     """Informacija faile U1.txt yra surašyta teisingai"""
     if not lines:
         raise check50.Failure("file U1.txt yra tusčias")
     if len(lines) != 1:
         raise check50.Failure("file U1.txt turi būti įrasytas vienas skaicius")
- @check50.check(compiles)
+        
 
