@@ -1,4 +1,9 @@
 lab50:
   files:
     - !exclude "*"
-    - !include "uzduotis.cpp"
+    - !include "sportas.cpp"
+    
+check50:
+  files:
+    - !exclude "*"
+    - !require "sportas.cpp"
