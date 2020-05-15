@@ -1,1 +1,9 @@
-
+lab50:
+  files:
+    - !exclude "*"
+    - !include "sportas.cpp"
+    
+check50:
+  files:
+    - !exclude "*"
+    - !require "sportas.cpp"
