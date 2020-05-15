@@ -34,10 +34,5 @@ def test0():
 
 def test1():
     """Teisingai irasyta i rezultatus"""
-    check50.run("> U1rez.txt").exit(0)
-    check50.run("./sportas").exit(0)
-    with open('U1rez.txt') as f1:
-        linesRez = f1.read().split()
-        if(len(linesRez) < 1):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
+
         
