@@ -41,7 +41,7 @@ def test1():
         if(len(linesRez) != 1):
             raise check50.Failure("File U1rez.txt nepakanka duomenų")
         else:
-            if (linesRez[0] == 2):
+            if (linesRez[0] == "2"):
                 pass
             else:
                 raise check50.Failure(linesRez[0])
