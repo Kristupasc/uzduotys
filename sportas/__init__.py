@@ -38,10 +38,10 @@ def test1():
     check50.run("./sportas").exit(0)
     with open('U1rez.txt') as f1:
         linesRez = f1.read().split()
-        if(len(linesRez) < 1):
+        if(len(linesRez) != 1):
             raise check50.Failure("File U1rez.txt nepakanka duomenų")
         else:
             if (linesRez[0] == 2):
                 pass
             else:
-                raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
+                raise check50.Failure("Neteisingas skaičius.")
