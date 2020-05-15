@@ -33,7 +33,7 @@ def test0():
         
 @check50.check(compiles)
 def test1():
-    """Teisingai irasyta i rezultatus"""
+    """Teisingai įrašyta į rezultatus"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./sportas").exit(0)
     with open('U1rez.txt') as f1:
