@@ -44,4 +44,4 @@ def test1():
             if (linesRez[0] == "2"):
                 pass
             else:
-                raise check50.Failure(linesRez[0])
+                raise check50.Failure("Neteisingas numeris")
