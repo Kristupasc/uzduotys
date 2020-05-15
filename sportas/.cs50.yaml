@@ -2,8 +2,12 @@ lab50:
   files:
     - !exclude "*"
     - !include "sportas.cpp"
+    - !include "U1.txt"
+    - !include "U1rez.txt"
     
 check50:
   files:
     - !exclude "*"
     - !require "sportas.cpp"
+    - !require "U1.txt"
+    - !require "U1rez.txt"
