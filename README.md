@@ -1,2 +1,2 @@
 # uzduotys
-#veikia
+veikia
