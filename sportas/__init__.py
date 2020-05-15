@@ -32,7 +32,3 @@ def test0():
         raise check50.Failure("file U1.txt turi būti įrasytas vienas skaicius")
  @check50.check(compiles)
 
-def test1():
-    """Teisingai irasyta i rezultatus"""
-
-        
