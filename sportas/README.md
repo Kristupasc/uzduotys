@@ -10,7 +10,7 @@ eilutę, kurioje yra sportininką identifikuojanti informacija (naudojami tik lo
 **Pradiniai duomenys:**<br/>
 Duomenys pateikiami tekstiniame faile **U2.txt**. Visi skaičiai yra sveikieji.<br/>
 Duomenų faile įrašyta:<br/>
-* Pirmoje eilutėje užrašytas startuojančiųjų skaičius **n** (1  **n**  30).<br/>
+* Pirmoje eilutėje užrašytas startuojančiųjų skaičius **n** (1 $\leqslant$ **n**  30).<br/>
 * Tolesnėse **n** eilučių atsitiktine tvarka surašyti sportininkų starto duomenys. Kiekvieno sportininko
 duomenys užrašyti atskiroje eilutėje: pirmose 20 pozicijų yra simbolių eilutė, kurioje pateikta
 sportininką identifikuojanti informacija; starto numeris (triženklis skaičius); tarpo simbolis ir po to
