@@ -10,13 +10,13 @@ eilutę, kurioje yra sportininką identifikuojanti informacija (naudojami tik lo
 **Pradiniai duomenys:**<br/>
 Duomenys pateikiami tekstiniame faile **U2.txt**. Visi skaičiai yra sveikieji.<br/>
 Duomenų faile įrašyta:<br/>
-* Pirmoje eilutėje užrašytas startuojančiųjų skaičius **n** (1 $\leqslant$ **n**  30).<br/>
+* Pirmoje eilutėje užrašytas startuojančiųjų skaičius **n** (1 <span>&#8804;</span> **n** <span>&#8804;</span> 30).<br/>
 * Tolesnėse **n** eilučių atsitiktine tvarka surašyti sportininkų starto duomenys. Kiekvieno sportininko
 duomenys užrašyti atskiroje eilutėje: pirmose 20 pozicijų yra simbolių eilutė, kurioje pateikta
 sportininką identifikuojanti informacija; starto numeris (triženklis skaičius); tarpo simbolis ir po to
 starto laikas: valanda, minutė ir sekundė, atskirtos vienu tarpo simboliu. Merginų starto numeriai
 prasideda vienetu, vaikinų – dvejetu.<br/>
-* Toliau užrašytas finišavusiųjų skaičius **m** (1  **m**  30).<br/>
+* Toliau užrašytas finišavusiųjų skaičius **m** (1 <span>&#8804;</span> **m** <span>&#8804;</span> 30).<br/>
 * Tolesnėse **m** eilučių surašyti sportininkų finišo duomenys. Kiekvieno sportininko duomenys užrašyti
 atskiroje eilutėje: starto numeris; finišo laikas: valanda, minutė ir sekundė; ir kiekvienoje šaudykloje
 taiklių šūvių skaičiai. Visi duomenys atskirti vienu tarpo simboliu. Sąraše yra tik finišavusiųjų
