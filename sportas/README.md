@@ -3,13 +3,13 @@ Sporto stovykloje populiari nauja sporto rungtis – vasaros biatlonas. Tai kros
 taikinius. Tose pačiose varžybose dalyvauja ir vaikinai, ir merginos. Visi startuoja pagal atrankos etapo
 rezultatus. Merginos trasą bėga vieną kartą, vaikinai – du. Varžybų startas 9 val. Finišas uždaromas
 17 val. Trasoje yra dvi šaudyklos po penkis taikinius. Netikslus šūvis vertinamas viena baudos minute,
-kuri pridedama prie trasos įveikimo laiko.
+kuri pridedama prie trasos įveikimo laiko.\
 **Parašykite programą** , kuri pateiktų atskirai vaikinų ir merginų rezultatų sąrašus pagal trasos įveikimo
 rezultatą didėjančiai. Jei sportininkų rezultatas vienodas, jie turi būti rašomi abėcėliškai pagal simbolių
-eilutę, kurioje yra sportininką identifikuojanti informacija (naudojami tik lotynų abėcėlės simboliai).
-Pradiniai duomenys
-Duomenys pateikiami tekstiniame faile **U2.txt**. Visi skaičiai yra sveikieji.
-Duomenų faile įrašyta:
+eilutę, kurioje yra sportininką identifikuojanti informacija (naudojami tik lotynų abėcėlės simboliai).\
+**Pradiniai duomenys**\
+Duomenys pateikiami tekstiniame faile **U2.txt**. Visi skaičiai yra sveikieji.\
+Duomenų faile įrašyta:\
  Pirmoje eilutėje užrašytas startuojančiųjų skaičius **n** (1  **n**  30).
  Tolesnėse **n** eilučių atsitiktine tvarka surašyti sportininkų starto duomenys. Kiekvieno sportininko
 duomenys užrašyti atskiroje eilutėje: pirmose 20 pozicijų yra simbolių eilutė, kurioje pateikta
