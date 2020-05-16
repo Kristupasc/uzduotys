@@ -38,3 +38,4 @@ sportininko nėra finišavusiųjų sąraše, tai rezultatų sąraše jo neturi b
 * Sukurkite ir parašykite funkciją, kuri spausdina vieno sąrašo rezultatus tekstiniame faile.<br/>
 * Programoje nenaudokite sakinių, skirtų darbui su ekranu.<br/>
 
+![](Screenshot_3.png)
