@@ -56,4 +56,3 @@ def test1():
         pass
     else:
         raise check50.Failure(rez)
-    file.close()
