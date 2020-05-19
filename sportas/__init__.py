@@ -50,5 +50,5 @@ def test1():
     if ats == rez.read():
         pass
     else:
-        raise check50.Failure(rez.read())
+        raise check50.Failure(lines)
     file.close()
