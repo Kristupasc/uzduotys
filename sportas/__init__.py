@@ -42,13 +42,13 @@ def test1():
          "256 16 43 15 5 5 5 5 \n", "213 15 50 10 4 0 5 3 \n", "111 16 5 35 5 4 \n", "255 16 55 59 5 4 3 1 \n", "115 16 42 22 2 5 \n"]
     duomenys.writelines(L)
     duomenys.close()
-    check50.run("> U1rez.txt").exit(0)
+    #check50.run("> U1rez.txt").exit(0)
     check50.run("./sportas").exit(0)
-    #file = open("U1rez.txt", "r+")
-    #TODO
-    #ats = [" "]
-    #if ats == file.read():
-        #pass
-    #else:
-        #raise check50.Failure("Atsakymas neteisingas")
+    file = open("U1rez.txt", "r+")
+    ats = ["Merginos\n", "111 Roma Liepa 0 51 20\n", "115 Rima Joana 1 29 23\n", "Vaikinai\n", "256 Zigmas Nosis 0 20 6\n", 
+          "213 Petras A. Petraitis 0 38 10\n", "255 Rytis Uosis Ainis 0 39 50\n"]
+    if ats == file.read():
+        pass
+    else:
+        raise check50.Failure("Atsakymas neteisingas")
             
