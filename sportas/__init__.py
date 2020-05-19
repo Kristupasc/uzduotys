@@ -43,7 +43,7 @@ def test1():
     duomenys.writelines(L)
     duomenys.close()
     check50.run("./sportas").exit(0)
-    file = open("U1rez.txt", "r+")
+    #file = open("U1rez.txt", "r+")
     #TODO
     #ats = [" "]
     #if ats == file.read():
