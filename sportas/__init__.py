@@ -51,4 +51,4 @@ def test1():
         pass
     else:
         raise check50.Failure(file.read())
-            
+    file.close()
