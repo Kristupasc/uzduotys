@@ -52,7 +52,7 @@ def test1():
     ats = ["Merginos", "111", "Roma", "Liepa", "0", "51", "20", "115", "Rima", "Joana", "1", "29", "23",
            "Vaikinai", "256", "Zigmas", "Nosis", "0", "20", "6", "213", "Petras", "A.", "Petraitis",
            "0", "38", "10", "255", "Rytis", "Uosis", "Ainis", "0", "39", "50"]
-    if ats == rez.read():
+    if ats == rez:
         pass
     else:
         raise check50.Failure(rez)
