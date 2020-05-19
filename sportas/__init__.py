@@ -32,7 +32,7 @@ def test0():
         raise check50.Failure("file U1.txt turi būti įrasytas vienas skaicius")
         
 
-@check50.check(exists)
+@check50.check(compiles)
 def test1():
     """Gaunamas teisingas atsakymas pagal 1 pavyzdį"""
     check50.run("> U1.txt").exit(0)
