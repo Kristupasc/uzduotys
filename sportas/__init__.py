@@ -50,5 +50,5 @@ def test1():
     if ats == file.read():
         pass
     else:
-        raise check50.Failure("ats")
+        raise check50.Failure(ats)
             
