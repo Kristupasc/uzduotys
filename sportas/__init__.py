@@ -55,4 +55,4 @@ def test1():
     if ats == rez:
         pass
     else:
-        raise check50.Failure(rez)
+        raise check50.Failure("Atsakymas neteisingas")
