@@ -31,23 +31,9 @@ def test0():
     if len(lines) != 1:
         raise check50.Failure("file U1.txt turi būti įrasytas vienas skaicius")
         
-@check50.check(compiles)
-def test1():
-    """Teisingai įrašyta į rezultatus"""
-    check50.run("> U1rez.txt").exit(0)
-    check50.run("./sportas").exit(0)
-    with open('U1rez.txt') as f1:
-        linesRez = f1.read().split()
-        if(len(linesRez) != 1):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
-        else:
-            if (linesRez[0] == "2"):
-                pass
-            else:
-                raise check50.Failure("Neteisingas numeris")
-                
+
 @check50.check(exists)
-def test2():
+def test1():
     """Gaunamas teisingas atsakymas pagal 1 pavyzdį"""
     check50.run("> U1.txt").exit(0)
     duomenys = open("U1.txt","w")
@@ -56,5 +42,12 @@ def test2():
          "256 16 43 15 5 5 5 5 \n", "213 15 50 10 4 0 5 3 \n", "111 16 5 35 5 4 \n", "255 16 55 59 5 4 3 1 \n", "115 16 42 22 2 5 \n"]
     duomenys.writelines(L)
     duomenys.close()
-    file = open("U1.txt", "r+")
-    raise check50.Failure(file.read())
+    check50.run("./sportas").exit(0)
+    file = open("U1rez.txt", "r+")
+    #TODO
+    #ats = [" "]
+    #if ats == file.read():
+        #pass
+    #else:
+        #raise check50.Failure("Atsakymas neteisingas")
+            
