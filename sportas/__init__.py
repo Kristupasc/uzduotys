@@ -49,6 +49,7 @@ def test1():
 @check50.check(exists)
 def test2():
     """Gaunamas teisingas atsakymas pagal 1 pavyzdį"""
+    check50.run("> U1.txt").exit(0)
     duomenys = open("U1.txt","w")
     L = ["6 \n", "Petras A. Petraitis 213 15 20 00 \n", "Jurgis Jurgutis 221 16 12 12 \n", "Rima Joana 115 15 15 59 \n",
          "Zigmas Nosis 256 16 23 9 \n", "Roma Liepa 111 15 15 15 \n", "Rytis Uosis Ainis 255 16 23 9 \n", "5 \n", 
