@@ -44,11 +44,16 @@ def test1():
     duomenys.close()
     #check50.run("> U1rez.txt").exit(0)
     check50.run("./sportas").exit(0)
-    rez = open("U1rez.txt", "r+")
-    ats = ["Merginos\n", "111 Roma Liepa 0 51 20\n", "115 Rima Joana 1 29 23\n", "Vaikinai\n", "256 Zigmas Nosis 0 20 6\n", 
-          "213 Petras A. Petraitis 0 38 10\n", "255 Rytis Uosis Ainis 0 39 50\n"]
+    #rez = open("U1rez.txt", "r+")
+    with open("U1rez.txt") as m:
+        rez = m.read().split()
+    #ats = ["Merginos\n", "111 Roma Liepa 0 51 20\n", "115 Rima Joana 1 29 23\n", "Vaikinai\n", "256 Zigmas Nosis 0 20 6\n", 
+          #"213 Petras A. Petraitis 0 38 10\n", "255 Rytis Uosis Ainis 0 39 50\n"]
+    ats = ["Merginos", "111", "Roma", "Liepa", "0", "51", "20", "115", "Rima", "Joana", "1", "29", "23",
+           "Vaikinai", "256", "Zigmas", "Nosis", "0", "20", "6", "213", "Petras", "A.", "Petraitis",
+           "0", "38", "10", "255", "Rytis", "Uosis", "Ainis", "0", "39", "50"]
     if ats == rez.read():
         pass
     else:
-        raise check50.Failure(lines)
+        raise check50.Failure(rez)
     file.close()
