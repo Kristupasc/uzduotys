@@ -11,6 +11,8 @@ while(True):
         if lines[sk2].isdigit():
             sk=sk2
             break
+        else:
+            sk = sk + 1
     else:
         sk = sk + 1
 
