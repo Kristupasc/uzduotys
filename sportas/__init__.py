@@ -49,7 +49,7 @@ def test0():
 def test1():
     """Informacija faile U1rez.txt yra išvedama teisingai"""
     check50.run("> U1rez.txt").exit(0)
-    check50.run("./aliejus").exit(0)
+    check50.run("./sportas").exit(0)
     linesRez = len(open("U1rez.txt").readlines())
     eilutes = 2 + int(lines[sk])
     if not linesRez:
