@@ -2,7 +2,8 @@ import check50
 
 with open('U1.txt') as f:
     lines = f.read().split()
-    
+sk = lines[0]
+
 @check50.check()
 def exists():
   """sportas.cpp egzistuoja."""
@@ -31,9 +32,21 @@ def test0():
     if len(lines) < 4:
         raise check50.Failure("U1.txt yra užrašytas neteisingai.")
         
-
-@check50.check(compiles)
+@check50.check(exists)
 def test1():
+    """Informacija faile U1rez.txt yra išvedama teisingai"""
+    check50.run("> U1rez.txt").exit(0)
+    check50.run("./aliejus").exit(0)
+    with open('U1rez.txt') as f1:
+       linesRez = f1.read().split()
+    eilutes = 2 + sk
+    if not linesRez:
+        raise check50.Failure("U1rez.txt yra tusčias")
+    if len(linesRez) != eilutes:
+        raise check50.Failure("Atsakymas gaunamas neteisingai")
+ 
+@check50.check(compiles)
+def test2():
     """Gaunamas teisingas atsakymas pagal 1 pavyzdį"""
     check50.run("> U1.txt").exit(0)
     duomenys = open("U1.txt","w")
