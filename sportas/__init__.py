@@ -27,9 +27,9 @@ def exists_reztxt():
 def test0():
     """Informacija faile U1.txt yra surašyta teisingai"""
     if not lines:
-        raise check50.Failure("file U1.txt yra tusčias")
-    if len(lines) != 1:
-        raise check50.Failure("file U1.txt turi būti įrasytas vienas skaicius")
+        raise check50.Failure("U1.txt yra tusčias")
+    if len(lines) < 4:
+        raise check50.Failure("U1.txt yra užrašytas neteisingai.")
         
 
 @check50.check(compiles)
