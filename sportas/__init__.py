@@ -39,7 +39,7 @@ def test1():
     #check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f1:
         linesRez = f1.read().split()
-    eilutes = 2 + sk
+    eilutes = 2 + int(sk)
     if not linesRez:
         raise check50.Failure("U1rez.txt yra tusčias")
     if len(linesRez) != eilutes:
