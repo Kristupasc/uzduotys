@@ -2,7 +2,17 @@ import check50
 
 with open('U1.txt') as f:
     lines = f.read()
-sk = lines[1]
+sk = 1
+sk2 = 1
+while(True):
+    if lines[sk].isdigit():
+        sk2 = sk
+        sk2 = sk2 + 4
+        if lines[sk2].isdigit():
+            sk=sk2
+            break
+    else:
+        sk = sk + 1
 
 @check50.check()
 def exists():
@@ -39,7 +49,7 @@ def test1():
     #check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f1:
         linesRez = f1.read().split()
-    eilutes = 2 + 1
+    eilutes = 2 + int(lines[sk])
     if not linesRez:
         raise check50.Failure("U1rez.txt yra tusčias")
     if len(linesRez) != eilutes:
