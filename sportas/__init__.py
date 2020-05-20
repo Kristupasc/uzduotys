@@ -1,7 +1,7 @@
 import check50
 
 with open('U1.txt') as f:
-    lines = f.read()
+    lines = f.read().split()
 sk = 1
 sk2 = 1
 while(True):
