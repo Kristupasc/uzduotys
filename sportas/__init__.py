@@ -2,7 +2,7 @@ import check50
 
 with open('U1.txt') as f:
     lines = f.read().split()
-sk = lines[0]
+sk = lines[1]
 
 @check50.check()
 def exists():
@@ -43,7 +43,7 @@ def test1():
     if not linesRez:
         raise check50.Failure("U1rez.txt yra tusčias")
     if len(linesRez) != eilutes:
-        raise check50.Failure("Atsakymas gaunamas neteisingai")
+        raise check50.Failure(lines[2])
  
 @check50.check(compiles)
 def test2():
