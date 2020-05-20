@@ -78,4 +78,4 @@ def test2():
     if ats == rez:
         pass
     else:
-        raise check50.Failure("Atsakymas neteisingas")
+        raise check50.Mismatch(ats, duomenys)
