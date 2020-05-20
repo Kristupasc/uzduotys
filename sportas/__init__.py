@@ -50,8 +50,9 @@ def test1():
     """Informacija faile U1rez.txt yra išvedama teisingai"""
     #check50.run("> U1rez.txt").exit(0)
     #check50.run("./aliejus").exit(0)
-    with open('U1rez.txt') as f1:
-        linesRez = f1.read().split().split()
+    #with open('U1rez.txt') as f1:
+        #linesRez = f1.read().split()
+    linesRez = len(open("U1rez.txt").readlines())
     eilutes = 2 + int(lines[sk])
     if not linesRez:
         raise check50.Failure("U1rez.txt yra tusčias")
