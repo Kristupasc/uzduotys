@@ -32,7 +32,7 @@ def test0():
     if len(lines) < 4:
         raise check50.Failure("U1.txt yra užrašytas neteisingai.")
         
-@check50.check(exists)
+@check50.check(compiles)
 def test1():
     """Informacija faile U1rez.txt yra išvedama teisingai"""
     check50.run("> U1rez.txt").exit(0)
