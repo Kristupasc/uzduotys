@@ -56,7 +56,7 @@ def test1():
     if not linesRez:
         raise check50.Failure("U1rez.txt yra tusčias")
     if len(linesRez) != eilutes:
-        raise check50.Failure(lines[sk])
+        raise check50.Failure(len(linesRez))
  
 @check50.check(compiles)
 def test2():
