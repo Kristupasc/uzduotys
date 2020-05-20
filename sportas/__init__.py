@@ -79,3 +79,22 @@ def test2():
         pass
     else:
         raise check50.Mismatch(ats, rez)
+      
+@check50.check(compiles)
+def test3():
+    """Gaunamas teisingas atsakymas pagal 2 pavyzdį"""
+    check50.run("> U1.txt").exit(0)
+    duomenys = open("U1.txt","w")
+    L = ["1\n", "Petras A. Petraitis 213 15 20 00 \n", "1\n", "213 15 50 10 4 0 5 3 \n"]
+    duomenys.writelines(L)
+    duomenys.close()
+    check50.run("> U1rez.txt").exit(0)
+    check50.run("./sportas").exit(0)
+    with open("U1rez.txt") as m:
+        rez = m.read().split()
+    ats = ["Merginos", "Vaikinai", "213", "Petras", "A.", "Petraitis", "0", "38","10"]
+    if ats == rez:
+        pass
+    else:
+        raise check50.Mismatch(ats, rez)
+
