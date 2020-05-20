@@ -12,6 +12,7 @@ while(True):
             sk=sk2
             break
         else:
+            sk=sk2
             sk = sk + 1
     else:
         sk = sk + 1
