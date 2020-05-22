@@ -56,18 +56,18 @@ def test1():
     check50.run("./sportas").exit(0)
     linesRez = len(open("U1rez.txt").readlines())
     eilutes = 2 + int(lines[sk])
-    with open("U1rez.txt") as m:
-        rez = m.read().split()
-    if rez[0] == "Merginos":
-        pass
-    else:
-        raise check50.Failure('U1rez.txt turi prasidėti žodžiu "Merginos"')
     if not linesRez:
         raise check50.Failure("U1rez.txt yra tusčias")
     if linesRez < eilutes:
         raise check50.Failure("U1rez.txt išvedė per mažai eilučių.")
     if linesRez > eilutes:
         raise check50.Failure("U1rez.txt išvedė per daug eilučių.")
+    with open("U1rez.txt") as m:
+        rez = m.read().split()
+    if rez[0] == "Merginos":
+        pass
+    else:
+        raise check50.Failure('U1rez.txt turi prasidėti žodžiu "Merginos"')
         
 @check50.check(compiles)
 def pvz1():
