@@ -44,22 +44,33 @@ def test0():
         raise check50.Failure("U1.txt yra tusčias")
     if len(lines) < 4:
         raise check50.Failure("U1.txt yra užrašytas neteisingai.")
-        
+      
+#@check50.check(compiles)
+#def rikiavimas():
+    #"""Rezultatai surikiuoti tinkamai"""
+    
 @check50.check(compiles)
 def test1():
     """Informacija faile U1rez.txt yra išvedama teisingai"""
-    check50.run("> U1rez.txt").exit(0)
+    #check50.run("> U1rez.txt").exit(0)
     check50.run("./sportas").exit(0)
     linesRez = len(open("U1rez.txt").readlines())
     eilutes = 2 + int(lines[sk])
+    with open("U1rez.txt") as m:
+        rez = m.read().split()
+    if rez[0] == "Merginos":
+        pass
+    else:
+        raise check50.Failure('U1rez.txt turi prasidėti žodžiu "Merginos"')
     if not linesRez:
         raise check50.Failure("U1rez.txt yra tusčias")
     if linesRez < eilutes:
         raise check50.Failure("U1rez.txt išvedė per mažai eilučių.")
     if linesRez > eilutes:
         raise check50.Failure("U1rez.txt išvedė per daug eilučių.")
+        
 @check50.check(compiles)
-def test2():
+def pvz1():
     """Gaunamas teisingas atsakymas pagal 1 pavyzdį"""
     check50.run("> U1.txt").exit(0)
     duomenys = open("U1.txt","w")
@@ -81,7 +92,7 @@ def test2():
         raise check50.Mismatch(ats, rez)
       
 @check50.check(compiles)
-def test3():
+def pvz2():
     """Gaunamas teisingas atsakymas pagal 2 pavyzdį"""
     check50.run("> U1.txt").exit(0)
     duomenys = open("U1.txt","w")
