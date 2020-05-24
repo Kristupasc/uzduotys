@@ -1,4 +1,4 @@
-#Balsavimas
+# Balsavimas
 Įmonėje, sudarytoje iš keleto skyrių, renkamas vienas iš trijų logotipų. Parengtos tokios darbuotojų
 apklausos taisyklės:<br/>
 
@@ -15,13 +15,13 @@ pridedami direktoriaus skirti taškai. Direktorius vienam iš logotipų skiria 3
 likusiam – 1 tašką.<br/>
 
 **5.** Nugali tas logotipas, kuris surenka daugiausia taškų.<br/>
-Parašykite programą, kuri nustatytų:<br/>
+Parašykite programą, kuri nustatytų:
 * kiek iš viso balsų ir taškų gavo kiekvienas logotipas,<br/>
 * kuris iš logotipų buvo išrinktas.<br/>
 
 **Pradiniai duomenys**<br/>
 
-Duomenys yra tekstiniame faile **U1.txt**:<br/>
+Duomenys yra tekstiniame faile **U1.txt**:
 
 * pirmoje eilutėje yra įmonės skyrių skaičius k (1<=k<=10) ,<br/>
 * kitose k eilučių yra už pirmąjį, antrąjį ir trečiąjį logotipus kiekviename skyriuje skirti balsai,<br/>
