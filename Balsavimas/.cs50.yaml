@@ -1,0 +1,13 @@
+lab50:
+  files:
+    - !exclude "*"
+    - !include "balsavimas.cpp"
+    - !include "U1.txt"
+    - !include "U1rez.txt"
+    
+check50:
+  files:
+    - !exclude "*"
+    - !require "balsavimas.cpp"
+    - !require "U1.txt"
+    - !require "U1rez.txt"
