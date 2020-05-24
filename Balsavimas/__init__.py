@@ -1,14 +1,18 @@
 import check50
 
+with open('U1.txt') as f:
+    lines = f.read().split()
+
+k = lines[0] + 2
 @check50.check()
 def exists():
-  """sportas.cpp egzistuoja."""
-  check50.exists("sportas.cpp")
+  """balsavimas.cpp egzistuoja."""
+  check50.exists("balsavimas.cpp")
   
 @check50.check(exists)
 def compiles():
-    """sportas.cpp kompiliuojasi be klaidų."""
-    check50.run("g++ sportas.cpp -lcrypt -lcs50 -lm -o sportas").exit(0)
+    """balsavimas.cpp kompiliuojasi be klaidų."""
+    check50.run("g++ balsavimas.cpp -lcrypt -lcs50 -lm -o balsavimas").exit(0)
    
 @check50.check(compiles)
 def exists_txt():
@@ -25,5 +29,7 @@ def test0():
     """Informacija faile U1.txt yra surašyta teisingai"""
     if not lines:
         raise check50.Failure("U1.txt yra tusčias")
-    if len(lines) < 4:
+    if len(lines) < k:
         raise check50.Failure("U1.txt yra užrašytas neteisingai.")
+    elif len(lines) > k:
+      raise check50.Failure("U1.txt yra užrašytas neteisingai.")
