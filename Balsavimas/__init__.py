@@ -51,12 +51,29 @@ def test1():
         raise check50.Failure("U1rez.txt išvedė per daug eilučių.")
         
 @check50.check(compiles)
-def pvz1():
-    """Gaunamas teisingas atsakymas pagal 1 pavyzdį"""
+def pvz2():
+    """Gaunamas teisingas atsakymas kai duota: 
+    3
+20 20 20
+17 99 21
+0 13 14
+1 2 3 """
     check50.run("> U1.txt").exit(0)
     duomenys = open("U1.txt","w")
-    L = ["6 \n", "15 10 22 \n", "15 40 13 \n", "23 26 26 \n", "110 30 58 \n", "33 33 32 \n", "0 56 0 \n", "2 1 3 \n"]
+    L = ["3 \n", "20 20 20 \n", "17 99 21 \n", "0 13 14 \n", "1 2 3 \n"]
     duomenys.writelines(L)
+    duomenys.close()
+    check50.run("> U1rez.txt").exit(0)
+    check50.run("./balsavimas").exit(0)
+    with open("U1rez.txt") as m:
+        rez = m.read().split()
+    ats = ["37", "132", "55", "1", "6", "7", "3"]
+    if ats == rez:
+        pass
+    else:
+        raise check50.Mismatch(ats, rez)
+      
+ines(L)
     duomenys.close()
     check50.run("> U1rez.txt").exit(0)
     check50.run("./balsavimas").exit(0)
@@ -67,4 +84,3 @@ def pvz1():
         pass
     else:
         raise check50.Mismatch(ats, rez)
-      
