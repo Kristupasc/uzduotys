@@ -72,15 +72,3 @@ def pvz2():
         pass
     else:
         raise check50.Mismatch(ats, rez)
-      
-ines(L)
-    duomenys.close()
-    check50.run("> U1rez.txt").exit(0)
-    check50.run("./balsavimas").exit(0)
-    with open("U1rez.txt") as m:
-        rez = m.read().split()
-    ats = ["196", "195", "151", "6", "12", "6", "2"]
-    if ats == rez:
-        pass
-    else:
-        raise check50.Mismatch(ats, rez)
