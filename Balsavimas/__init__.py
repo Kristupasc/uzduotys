@@ -36,8 +36,8 @@ def test0():
 @check50.check(compiles)
 def test1():
     """Informacija faile U1rez.txt yra išvedama teisingai"""
-    check50.run("> U1rez.txt").exit(0)
-    check50.run("./sportas").exit(0)
+    #check50.run("> U1rez.txt").exit(0)
+    #check50.run("./balsavimas").exit(0)
     with open("U1rez.txt") as m:
         rez = m.read().split()
     linesRez = len(open("U1rez.txt").readlines())
@@ -58,7 +58,7 @@ def pvz1():
     duomenys.writelines(L)
     duomenys.close()
     #check50.run("> U1rez.txt").exit(0)
-    #check50.run("./sportas").exit(0)
+    #check50.run("./balsavimas").exit(0)
     with open("U1rez.txt") as m:
         rez = m.read().split()
     ats = ["196", "195", "151", "6", "12", "6", "2"]
