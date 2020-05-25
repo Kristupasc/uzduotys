@@ -32,7 +32,7 @@ def test0():
     if linesRez < k:
         raise check50.Failure("U1.txt yra užrašytas neteisingai.")
     elif linesRez > k:
-        raise check50.Failure(linesRez)
+        raise check50.Failure("U1.txt yra užrašytas neteisingai.")
 
 @check50.check(compiles)
 def test1():
