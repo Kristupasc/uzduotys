@@ -66,4 +66,4 @@ def pvz2():
     if ats == rez:
         pass
     else:
-        raise check50.Mismatch(ats, rez, help = "Duomenų faile yra parašyta: 3 20 20 20 17 99 21 0 13 14 1 2 3")
+        raise check50.Mismatch(ats, rez)
