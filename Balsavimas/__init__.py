@@ -52,12 +52,7 @@ def test1():
         
 @check50.check(compiles)
 def pvz2():
-    """Gaunamas teisingas atsakymas kai duota: 
-    3
-20 20 20
-17 99 21
-0 13 14
-1 2 3 """
+    """Gaunamas teisingas atsakymas pagal antrą pavyzdį"""
     check50.run("> U1.txt").exit(0)
     duomenys = open("U1.txt","w")
     L = ["3 \n", "20 20 20 \n", "17 99 21 \n", "0 13 14 \n", "1 2 3 \n"]
