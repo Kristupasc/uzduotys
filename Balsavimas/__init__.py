@@ -37,8 +37,8 @@ def test0():
 @check50.check(compiles)
 def test1():
     """Informacija faile U1rez.txt yra išvedama teisingai"""
-    #check50.run("> U1rez.txt").exit(0)
-    #check50.run("./balsavimas").exit(0)
+    check50.run("> U1rez.txt").exit(0)
+    check50.run("./balsavimas").exit(0)
     with open("U1rez.txt") as m:
         rez = m.read().split()
     linesRez = len(open("U1rez.txt").readlines())
@@ -58,8 +58,8 @@ def pvz1():
     L = ["6 \n", "15 10 22 \n", "15 40 13 \n", "23 26 26 \n", "110 30 58 \n", "33 33 32 \n", "0 56 0 \n", "2 1 3 \n"]
     duomenys.writelines(L)
     duomenys.close()
-    #check50.run("> U1rez.txt").exit(0)
-    #check50.run("./balsavimas").exit(0)
+    check50.run("> U1rez.txt").exit(0)
+    check50.run("./balsavimas").exit(0)
     with open("U1rez.txt") as m:
         rez = m.read().split()
     ats = ["196", "195", "151", "6", "12", "6", "2"]
