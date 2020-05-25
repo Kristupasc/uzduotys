@@ -31,7 +31,7 @@ def test0():
     if len(lines) < k:
         raise check50.Failure("U1.txt yra užrašytas neteisingai.")
     elif len(lines) > k:
-        raise check50.Failure(k)
+        raise check50.Failure(len(lines))
 
 @check50.check(compiles)
 def test1():
