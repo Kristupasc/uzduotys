@@ -40,9 +40,10 @@ def exists_reztxt():
 @check50.check(exists)
 def test0():
     """Informacija faile U1.txt yra surašyta teisingai"""
+    linesRez = len(open("U1rez.txt").readlines())
     if not lines:
         raise check50.Failure("U1.txt yra tusčias")
-    if len(lines) < 4:
+    if linesRez < 4:
         raise check50.Failure("U1.txt yra užrašytas neteisingai.")
       
 #@check50.check(compiles)
