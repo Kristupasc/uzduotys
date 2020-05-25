@@ -66,4 +66,4 @@ def pvz2():
     if ats == rez:
         pass
     else:
-        raise check50.Mismatch(ats, rez)
+        raise check50.Mismatch(ats, rez, help = "pavyzdys yra: 3 3 3 3 3")
