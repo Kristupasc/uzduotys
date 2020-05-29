@@ -3,13 +3,13 @@
 lab50: # deklaruoja, kas bus reikalinga lab50 aplinkoje
   files:
     - !exclude "*" #šitas visada reikalingas.
-    - !include "balsavimas.cpp" #balsavimas.cpp reikia pakeisti į jūsų uždavinio pavadinimą.cpp.
-    - !include "U1.txt" # duomenų failo pavadinimas.
-    - !include "U1rez.txt" # rezultatų failo pavadinimas.
+    - !include "uzduotis.cpp" #uzduotis.cpp reikia pakeisti į jūsų uždavinio pavadinimą.cpp.
+    - !include "Duomenys.txt" # duomenų failo pavadinimas.
+    - !include "Rezultatai.txt" # rezultatų failo pavadinimas.
     
 check50: # deklaruoja, kas bus reikalinga check50 sistemoje
   files:
     - !exclude "*" # šitas visada reikalingas.
-    - !require "balsavimas.cpp" #balsavimas.cpp reikia pakeisti į jūsų uždavinio pavadinimą.cpp.
-    - !require "U1.txt" # duomenų failo pavadinimas.
-    - !require "U1rez.txt" # rezultatų failo pavadinimas.
+    - !require "uzduotis.cpp" #uzduotis.cpp reikia pakeisti į jūsų uždavinio pavadinimą.cpp.
+    - !require "Duomenys.txt" # duomenų failo pavadinimas.
+    - !require "Rezultatai.txt" # rezultatų failo pavadinimas.
