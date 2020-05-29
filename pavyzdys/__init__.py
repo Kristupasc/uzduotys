@@ -1,4 +1,4 @@
-# Šis file yra vykdomas, kai veikia check50 komanda (tikrinimas užduoties)
+# Šis file yra vykdomas, kai veikia check50 komanda (užduoties tikrinimas)
 # Kodas yra rašomas Python kalba.
 # Štai yra pavyzdinis kodas, kuris patikrina ar egzistuoja visi failai, ar duomenų failas yra surašytas teisingai,
 # ar rezultatų faile yra išvesta teisinga informacija ir patikrinimas, ar gaunamas teisingas atsakymas pagal du pavyzdžius.
