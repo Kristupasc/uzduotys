@@ -18,3 +18,7 @@ Numeracija gali būti ir tokia: <br/>
 
 Norint, kad tekstas būtų rašomas iš naujos eilutės, reikia parašyti <br/> funkciją.
 
+Norint įdėti lentelę, rekomenduojama tiesiog padaryti ekrano kopiją ir įkelti į šią repozitoriją.
+
+![](Nuotrauka.png)
+Nuotrauka.png pakeiskite į nuotraukos pavadinimą.
