@@ -21,4 +21,5 @@ Norint, kad tekstas būtų rašomas iš naujos eilutės, reikia parašyti <br/> 
 Norint įdėti lentelę, rekomenduojama tiesiog padaryti ekrano kopiją ir įkelti į šią repozitoriją.
 
 ![](Nuotrauka.png)<br/>
+
 Nuotrauka.png pakeiskite į nuotraukos pavadinimą.
