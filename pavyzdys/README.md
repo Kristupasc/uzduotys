@@ -7,14 +7,14 @@ README.md failas yra failas, kuriame yra rašomas tekstas, uždavinys. Jeigu tur
 pdf to markdown converter ne visada veikia teisingai ir ne visada convertina lenteles, numeracijas.<br/>
 **Norėdami sužinoti, kaip reikia rašyti su markdown, galite paspausti redaguoti README.md ir pažiūrėti, kaip yra parašytas šis tekstas.**<br/>
 
-Numeracija rašoma taip:
-* pirmas
+Numeracija rašoma taip: 
+* pirmas 
 * antras
 * trecias
 
-Numeracija gali būti ir tokia:
-**1.** pirmas
-**2.** antras
+Numeracija gali būti ir tokia: <br/>
+**1.** pirmas <br/>
+**2.** antras <br/> 
 
 Norint, kad tekstas būtų rašomas iš naujos eilutės, reikia parašyti <br/> funkciją.
 
