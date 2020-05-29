@@ -47,7 +47,7 @@ def test1():
   # Kai kuriuose uždaviniuose Rezultatų faile gali būti skirtingas kiekis eilučių. Tada reikia rašyti labiau komplikuotą kodą,
   # arba tiesiog ištrinti šią funkciją.
     """Informacija faile Rezultatai.txt yra išvedama teisingai"""
-    check50.run("./balsavimas").exit(0) # tai yra komanda, kuri yra tas pats kaip per code blocks paspausti F9
+    check50.run("./balsavimas").exit(0) # tai yra komanda, kuri yra tas pats kaip per code blocks paspaudimas F9
     eilutes = len(open("Rezultatai.txt").readlines()) # atidaro Rezultatų failą ir nuskaito, kiek jame yra eilučių.
     eilutesAts = 0 # skaičių 0 reikia pakeisti į eilučių kiekį, kiek turi būti rezultatų faile.
     if not eilutes: #jeigu rezultatų failė nėra eilučių (jis tuščias)
