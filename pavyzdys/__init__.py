@@ -84,7 +84,7 @@ def pvz1():
 #2
 #tada ats = ["196", "195", "151", "6", "12", "6", "2"]
     if ats == rez: #tikrinama, ar gauti rezultatai yra tokie patys kaip rezultatai pagal pavyzdį.
-        pass # niekas neivyksta.
+        pass # niekas neįvyksta.
     else: # jeigu rezultatai nesutampa su rezultatais pagal pavyzdį
         raise check50.Mismatch(ats, rez) # Išvedama, kad nėra gautas teisingas atsakymas pagal pavyzdį ir parodyta, koks
 # tūrėjo būti atsakymas, ir kokį gavo programa.
