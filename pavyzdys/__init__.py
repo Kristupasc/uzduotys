@@ -29,32 +29,32 @@ def egzistuoja_Rezultatai(): # egzistuoja_Rezultatai yra funkcijos pavadinimas, 
     """Rezultatai.txt egzistuoja.""" # ši funkcija veikia tik tada jeigu Rezultatų failas egzistuoja.
     check50.exists("Rezultatai.txt") # tikrinama, ar egzistuoja Rezultatai.txt failas sistemoje.
     
-@check50.check(exists)
-def test0():
-    """Informacija faile U1.txt yra surašyta teisingai"""
-    linesRez = len(open("U1.txt").readlines())
-    if not lines:
-        raise check50.Failure("U1.txt yra tusčias")
-    if linesRez < k:
-        raise check50.Failure("U1.txt yra užrašytas neteisingai.")
-    elif linesRez > k:
-        raise check50.Failure("U1.txt yra užrašytas neteisingai.")
+@check50.check(kompiliuojasi) # funkcija veikia tik tada, jeigu failas kompiliuojasi.
+def test0(): # tai yra pirmasis testas, kuris skirsis priklausant nuo uždavinio.
+  # Kai kuriuose uždaviniuose Duomenų faile gali būti skirtingas kiekis eilučių. Tada reikia rašyti labiau komplikuotą kodą,
+  # arba tiesiog ištrinti šią funkciją.
+    """Informacija faile Duomenys.txt yra surašyta teisingai"""
+    eilutes = len(open("Duomenys.txt").readlines()) # atidaro Duomenų failą ir nuskaito, kiek jame yra eilučių.
+    eilutesAts = 0 # skaičių 0 reikia pakeisti į eilučių kiekį, kiek turi būti duomenų faile.
+    if not eilutes: #jeigu duomenų failė nėra eilučių (jis tuščias)
+        raise check50.Failure("Duomenys.txt yra tusčias") # Išvedama, jog duomenų failas yra tuščias. Tolesnės eilutės nebėra skaitomos.
+    if eilutes != eilutesAts: # tikrinama, ar eilučių kiekis nėra lygus teisingu eilučių kiekiu.
+        raise check50.Failure("Duomenys.txt yra užrašytas neteisingai.") # Išvedama, jog duomenų failas yra užrašytas neteisingai.
+# jeigu funkcija nuėjo iki šios vietos be jokių trugdžių, funkcija išveda: Informacija faile Duomenys.txt yra surašyta teisingai.
 
-@check50.check(compiles)
+@check50.check(kompiliuojasi) # funkcija veikia tik tada, jeigu failas kompiliuojasi.
 def test1():
-    """Informacija faile U1rez.txt yra išvedama teisingai"""
-    check50.run("> U1rez.txt").exit(0)
-    check50.run("./balsavimas").exit(0)
-    with open("U1rez.txt") as m:
-        rez = m.read().split()
-    linesRez = len(open("U1rez.txt").readlines())
-    eilutes = 3
-    if not linesRez:
-        raise check50.Failure("U1rez.txt yra tusčias")
-    if linesRez < eilutes:
-        raise check50.Failure("U1rez.txt išvedė per mažai eilučių.")
-    if linesRez > eilutes:
-        raise check50.Failure("U1rez.txt išvedė per daug eilučių.")
+  # Kai kuriuose uždaviniuose Rezultatų faile gali būti skirtingas kiekis eilučių. Tada reikia rašyti labiau komplikuotą kodą,
+  # arba tiesiog ištrinti šią funkciją.
+    """Informacija faile Rezultatai.txt yra išvedama teisingai"""
+    check50.run("./balsavimas").exit(0) # tai yra komanda, kuri yra tas pats kaip per code blocks paspausti F9
+    eilutes = len(open("Rezultatai.txt").readlines()) # atidaro Rezultatų failą ir nuskaito, kiek jame yra eilučių.
+    eilutesAts = 0 # skaičių 0 reikia pakeisti į eilučių kiekį, kiek turi būti rezultatų faile.
+    if not eilutes: #jeigu rezultatų failė nėra eilučių (jis tuščias)
+        raise check50.Failure("U1rez.txt yra tusčias") # Išvedama, jog rezultatų failas yra tuščias. Tolesnės eilutės nebėra skaitomos.
+    if eilutes != eilutesAts: # tikrinama, ar eilučių kiekis nėra lygus teisingu eilučių kiekiu.
+        raise check50.Failure("U1rez.txt išvedė per daug eilučių.") # Išvedama, jog rezultatų failas yra užrašytas neteisingai.
+# jeigu funkcija nuėjo iki šios vietos be jokių trugdžių, funkcija išveda: Informacija faile Rezultatai.txt yra išvedama teisingai.
         
 @check50.check(compiles)
 def pvz2():
