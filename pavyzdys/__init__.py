@@ -56,20 +56,38 @@ def test1():
         raise check50.Failure("U1rez.txt išvedė per daug eilučių.") # Išvedama, jog rezultatų failas yra užrašytas neteisingai.
 # jeigu funkcija nuėjo iki šios vietos be jokių trugdžių, funkcija išveda: Informacija faile Rezultatai.txt yra išvedama teisingai.
         
-@check50.check(compiles)
-def pvz2():
-    """Gaunamas teisingas atsakymas pagal antrą pavyzdį"""
-    check50.run("> U1.txt").exit(0)
-    duomenys = open("U1.txt","w")
-    L = ["3 \n", "20 20 20 \n", "17 99 21 \n", "0 13 14 \n", "1 2 3 \n"]
-    duomenys.writelines(L)
-    duomenys.close()
-    check50.run("> U1rez.txt").exit(0)
-    check50.run("./balsavimas").exit(0)
-    with open("U1rez.txt") as m:
-        rez = m.read().split()
-    ats = ["37", "132", "55", "1", "6", "7", "3"]
-    if ats == rez:
-        pass
-    else:
-        raise check50.Mismatch(ats, rez)
+@check50.check(kompiliuojasi)
+def pvz1():
+    """Gaunamas teisingas atsakymas pagal pirmą pavyzdį"""
+    check50.run("> Duomenys.txt").exit(0) # ištrinamas Duomenys.txt failas, kad galėtume įrašyti savo duomenis.
+    duomenys = open("Duomenys.txt","w") # Atidaromas Rezultatai.txt failas, kad galėtume į jį rašyti duomenis.
+    L = ["3 \n", "20 20 20 \n", "17 99 21 \n", "0 13 14 \n", "1 2 3 \n"] # L yra masyvas, kuriame yra visa duomenų informacija.
+#pvz. jeigu duomenys yra:
+#6
+#15 10 22
+#15 40 13
+#23 26 26
+#110 30 58
+#33 33 32
+#0 56 0
+#2 1 3
+#tada L = ["6 \n", "15 10 22 \n", "15 40 13 \n", "23 26 26 \n", "110 30 58 \n", "33 33 32 \n", "0 56 0 \n", "2 1 3 \n"]
+    duomenys.writelines(L) # įrašoma į duomenų failą informacija L masyve.
+    duomenys.close() # uždaromas duomenų failas (į jį rašyti nebereikės)
+    check50.run("./balsavimas").exit(0) # tai yra komanda, kuri yra tas pats kaip per code blocks paspausti F9
+    with open("Rezultatai.txt") as m: # atidaromas Rezultatai.txt failas
+        rez = m.read().split() # nuskaitomas Rezultatai.txt failas ir duomenys įdedami į rez masyvą
+    ats = ["37", "132", "55", "1", "6", "7", "3"] # tai yra informacija, kuri turi būti Rezultatų faile
+#pvz. jeigu rezultatai turi būti:
+#196 195 151
+#6 12 6
+#2
+#tada ats = ["196", "195", "151", "6", "12", "6", "2"]
+    if ats == rez: #tikrinama, ar gauti rezultatai yra tokie patys kaip rezultatai pagal pavyzdį.
+        pass # niekas neivyksta.
+    else: # jeigu rezultatai nesutampa su rezultatais pagal pavyzdį
+        raise check50.Mismatch(ats, rez) # Išvedama, kad nėra gautas teisingas atsakymas pagal pavyzdį ir parodyta, koks
+# tūrėjo būti atsakymas, ir kokį gavo programa.
+
+#Jeigu norite padaryti antrą patikrinimą, tik su kitais duomenimis, galima copy pastinti visą funkciją, tik pakeisti
+# jos pavadinimą ir L su ats masyvus.
