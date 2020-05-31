@@ -31,5 +31,5 @@ Taip atrodo tekstas per markdown:
 ## Rekomendacijos
 Yra rekomenduojama README.md gale įrašyti tekstą, kuris yra rekomendacijos.txt faile. <br/>
 
-## Galimos problemos
+## Dažnai užduodami klausimai
 Jeigu iškylo problemų darant savo aplinką, yra šansai, kad šitame skyriuje bus atsakyti klausimai į jūsų problemą.
