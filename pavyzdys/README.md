@@ -27,3 +27,9 @@ Nuotrauka.png pakeiskite į nuotraukos pavadinimą.
 Taip atrodo tekstas per markdown:
 
 ![](Pavyzdys.png)<br/>
+
+# Rekomendacijos
+Yra rekomenduojama README.md gale įrašyti tekstą, kuris yra rekomendacijos.txt faile. <br/>
+
+# Galimos problemos
+Jeigu iškylo problemų darant savo aplinką, yra šansai, kad šitame skyriuje bus atsakyti klausimai į jūsų problemą.
