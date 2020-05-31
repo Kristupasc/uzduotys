@@ -1,0 +1,17 @@
+README.md failo gale, galima parašyti šį kodą: 
+
+
+
+# Kaip kompiliuoti kodą
+Parašius komandą ```make uzduotis``` į terminalą, kodas bus sukompiliuojamas. <br/>
+Norint jį paleisti, reikia parašyti ```./uzduotis```. <br/>
+
+# Kaip testuoti kodą
+Parašykite šią komandą, kad paleisti check50 procesą
+```check50 Kristupasc/uzduotys/master/Balsavimas```
+
+
+
+
+Neužmirškite pakeisti žodį uzduotis į jūsų .cpp failo pavadinimą. 
+Taip pat check50 Kristupasc/uzduotys/master/Balsavimas pakeiskite į savo komandą.
