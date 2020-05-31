@@ -2,11 +2,11 @@ README.md failo gale, galima parašyti šį kodą:
 
 
 
-# Kaip kompiliuoti kodą
+## Kaip kompiliuoti kodą
 Parašius komandą ```make uzduotis``` į terminalą, kodas bus sukompiliuojamas. <br/>
 Norint jį paleisti, reikia parašyti ```./uzduotis```. <br/>
 
-# Kaip testuoti kodą
+## Kaip testuoti kodą
 Parašykite šią komandą, kad paleisti check50 procesą
 ```check50 Kristupasc/uzduotys/master/Balsavimas```
 
