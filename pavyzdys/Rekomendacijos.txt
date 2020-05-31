@@ -10,6 +10,9 @@ Norint jį paleisti, reikia parašyti ```./uzduotis```. <br/>
 Parašykite šią komandą, kad paleisti check50 procesą
 ```check50 Kristupasc/uzduotys/master/Balsavimas```
 
+## Kaip patikrinti kodo stilių
+Parašykite šią komandą, kad paleisti style50 procesą
+```style50 balsavimas.cpp```
 
 
 
