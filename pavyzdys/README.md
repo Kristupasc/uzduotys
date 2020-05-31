@@ -32,4 +32,4 @@ Taip atrodo tekstas per markdown:
 Yra rekomenduojama README.md gale įrašyti tekstą, kuris yra rekomendacijos.txt faile. <br/>
 
 ## Dažnai užduodami klausimai
-Jeigu iškylo problemų darant savo aplinką, yra šansai, kad šitame skyriuje bus atsakyti klausimai į jūsų problemą.
+
