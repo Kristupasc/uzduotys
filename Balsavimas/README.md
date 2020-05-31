@@ -45,10 +45,10 @@ Tekstiniame faile U1rez.txt rezultatus įrašykite tokia tvarka:<br/>
 ![](Screenshot_5.png)
 
 
-# Kaip kompiliuoti kodą
+## Kaip kompiliuoti kodą
 Parašius komandą ```make balsavimas``` į terminalą, kodas bus sukompiliuojamas. <br/>
 Norint jį paleisti, reikia parašyti ```./balsavimas```. <br/>
 
-# Kaip testuoti kodą
+## Kaip testuoti kodą
 Parašykite šią komandą, kad paleisti check50 procesą
 ```check50 Kristupasc/uzduotys/master/Balsavimas```
