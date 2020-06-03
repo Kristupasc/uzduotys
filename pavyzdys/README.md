@@ -1,7 +1,8 @@
 # Pavyzdys
 
 **Pamoka kaip sukurti savo repozitoriją:** http://www.youtube.com/watch?v=HmthG8G4yK0 <br/>
-**Kiekvienas iš šių failų yra reikalingas, kad veiktų programa. Kiekviename faile yra paaiškinimas kam jis skirtas ir kaip juo naudotis.**<br/>
+
+<br/>**Kiekvienas iš šių failų yra reikalingas, kad veiktų programa. Kiekviename faile yra paaiškinimas kam jis skirtas ir kaip juo naudotis.**<br/>
 Check50 dokumentacija: https://cs50.readthedocs.io/check50/api/#check50 <br/>
 Norint pažiūrėti, kas yra parašyta kiekviename faile, tiesiog ant jo paspauskite. <br/>
 README.md yra failas, kuriame yra rašomas tekstas, uždavinys. Jeigu turite uždavinio PDF failą, jį galite įtempti į pdf to markdown converterį (https://pdf2md.morethan.io/) ir gautą tekstą įkelti į README.md<br/>
