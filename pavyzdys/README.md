@@ -1,7 +1,6 @@
 # Pavyzdys
 
-**Pamoka kaip sukurti savo repozitoriją:** <br/><br/>
-[![](http://img.youtube.com/vi/HmthG8G4yK0/0.jpg)](http://www.youtube.com/watch?v=HmthG8G4yK0 "GitHub pamoka")
+**Pamoka kaip sukurti savo repozitoriją:** http://www.youtube.com/watch?v=HmthG8G4yK0 <br/>
 <br/><br/>**Kiekvienas iš šių failų yra reikalingas, kad veiktų programa. Kiekviename faile yra paaiškinimas kam jis skirtas ir kaip juo naudotis.**<br/>
 Check50 dokumentacija: https://cs50.readthedocs.io/check50/api/#check50 <br/>
 Norint pažiūrėti, kas yra parašyta kiekviename faile, tiesiog ant jo paspauskite. <br/>
