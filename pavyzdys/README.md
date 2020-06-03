@@ -1,5 +1,8 @@
 # Pavyzdys
 
+**Pamoka kaip sukurti savo repozitoriją:**
+[![GitHub pamoka](https://img.youtube.com/vi/HmthG8G4yK0/0.jpg)]
+(https://www.youtube.com/watch?v=HmthG8G4yK0)
 **Kiekvienas iš šių failų yra reikalingas, kad veiktų programa. Kiekviename faile yra paaiškinimas kam jis skirtas ir kaip juo naudotis.**<br/>
 Check50 dokumentacija: https://cs50.readthedocs.io/check50/api/#check50 <br/>
 Norint pažiūrėti, kas yra parašyta kiekviename faile, tiesiog ant jo paspauskite. <br/>
