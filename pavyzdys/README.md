@@ -35,9 +35,12 @@ Yra rekomenduojama README.md gale įrašyti tekstą, kuris yra rekomendacijos.tx
 
 ## Dažnai užduodami klausimai
 
-**1. Jeigu rašant check50 komandą gaunamas šis įspėjimas:** <br/>
+**1. Rašydamas check50 komandą gaunu šią klaidą:** <br/>
 ![](Klaida.png)<br/>
 Nueikite į https://submit.cs50.io ir paspauskite authorize.
 Jeigu vis tiek neveikia check50, tada:
 * Palaukite apie 5-10 minučių.
-* Pabandykite parašyti check50 komandą būdami incognito režime.
+* Pabandykite parašyti check50 komandą būdami incognito režime. <br/>
+
+**2. Esu repozitorijos savininkas ir neveikia check50 komanda**<br/>
+Šiuo atveju teks susikurti naują GitHub profilį, kurį reikės naudoti rašant check50 komandą.
