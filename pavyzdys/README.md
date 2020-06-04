@@ -31,7 +31,7 @@ Taip atrodo tekstas per markdown:
 ![](Pavyzdys.png)<br/>
 
 ## Rekomendacijos
-Yra rekomenduojama README.md gale įrašyti tekstą, kuris yra rekomendacijos.txt faile. <br/>
+Yra rekomenduojama README.md gale įrašyti tekstą, kuris yra Rekomendacijos.txt faile. <br/>
 
 ## Dažnai užduodami klausimai
 
