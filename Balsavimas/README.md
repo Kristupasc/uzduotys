@@ -50,11 +50,11 @@ Parašius komandą ```make balsavimas``` į terminalą, kodas bus sukompiliuojam
 Norint jį paleisti, reikia parašyti ```./balsavimas```. <br/>
 
 ## Kaip testuoti kodą
-Parašykite šią komandą, kad paleisti check50 procesą
+Parašykite šią komandą, kad paleisti check50 procesą <br/>
 ```check50 Kristupasc/uzduotys/master/Balsavimas```
 
 ## Kaip patikrinti kodo stilių
-Parašykite šią komandą, kad paleisti style50 procesą
+Parašykite šią komandą, kad paleisti style50 procesą<br/>
 ```style50 balsavimas.cpp```
 <br/>
 <br/>
