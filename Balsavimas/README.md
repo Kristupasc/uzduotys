@@ -56,3 +56,9 @@ Parašykite šią komandą, kad paleisti check50 procesą
 ## Kaip patikrinti kodo stilių
 Parašykite šią komandą, kad paleisti style50 procesą
 ```style50 balsavimas.cpp```
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
