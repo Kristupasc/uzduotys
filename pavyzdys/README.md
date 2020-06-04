@@ -35,7 +35,7 @@ Yra rekomenduojama README.md gale įrašyti tekstą, kuris yra rekomendacijos.tx
 
 ## Dažnai užduodami klausimai
 
-**1. Jeigu rašant check50 komandą gaunamas šis įspėjimas:** <br/> <br/>
+**1. Jeigu rašant check50 komandą gaunamas šis įspėjimas:** <br/>
 ![](Klaida.png)<br/>
 Nueikite į https://submit.cs50.io ir paspauskite authorize.
 Jeigu vis tiek neveikia check50, tada:
