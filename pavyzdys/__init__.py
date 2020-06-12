@@ -91,4 +91,4 @@ def pvz1():
 # tūrėjo būti atsakymas, ir kokį gavo programa.
 
 #Jeigu norite padaryti antrą patikrinimą, tik su kitais duomenimis, galima copy pastinti visą funkciją, tik pakeisti
-# jos pavadinimą ir L su ats masyvus.
+# jos pavadinimą ir L bei ats masyvus.
