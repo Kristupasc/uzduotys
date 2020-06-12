@@ -2,6 +2,7 @@
 # Kodas yra rašomas Python kalba.
 # Štai yra pavyzdinis kodas, kuris patikrina ar egzistuoja visi failai, ar duomenų failas yra surašytas teisingai,
 # ar rezultatų faile yra išvesta teisinga informacija ir patikrinimas, ar gaunamas teisingas atsakymas pagal du pavyzdžius.
+# žodžius balsavimas ir uzduotis pakeiskite į savo užduoties pavadinimą.
 
 import check50 # importuojama check50 aplinka.
 
