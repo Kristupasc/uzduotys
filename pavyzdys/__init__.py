@@ -48,7 +48,7 @@ def test1():
   # Kai kuriuose uždaviniuose Rezultatų faile gali būti skirtingas kiekis eilučių. Tada reikia rašyti labiau komplikuotą kodą,
   # arba tiesiog ištrinti šią funkciją.
     """Informacija faile Rezultatai.txt yra išvedama teisingai"""
-    check50.run("./balsavimas").exit(0) # tai yra komanda, kuri yra tas pats kaip per code blocks paspaudimas F9
+    check50.run("./balsavimas") # tai yra komanda, kuri yra tas pats kaip per code blocks paspaudimas F9
     eilutes = len(open("Rezultatai.txt").readlines()) # atidaro Rezultatų failą ir nuskaito, kiek jame yra eilučių.
     eilutesAts = 0 # skaičių 0 reikia pakeisti į eilučių kiekį, kiek turi būti rezultatų faile.
     if not eilutes: #jeigu rezultatų failė nėra eilučių (jis tuščias)
@@ -60,7 +60,7 @@ def test1():
 @check50.check(kompiliuojasi)
 def pvz1():
     """Gaunamas teisingas atsakymas pagal pirmą pavyzdį"""
-    check50.run("> Duomenys.txt").exit(0) # ištrinamas Duomenys.txt failas, kad galėtume įrašyti savo duomenis.
+    check50.run("> Duomenys.txt") # ištrinamas Duomenys.txt failas, kad galėtume įrašyti savo duomenis.
     duomenys = open("Duomenys.txt","w") # Atidaromas Rezultatai.txt failas, kad galėtume į jį rašyti duomenis.
     L = ["3 \n", "20 20 20 \n", "17 99 21 \n", "0 13 14 \n", "1 2 3 \n"] # L yra masyvas, kuriame yra visa duomenų informacija.
 #pvz. jeigu duomenys yra:
@@ -75,7 +75,7 @@ def pvz1():
 #tada L = ["6 \n", "15 10 22 \n", "15 40 13 \n", "23 26 26 \n", "110 30 58 \n", "33 33 32 \n", "0 56 0 \n", "2 1 3 \n"]
     duomenys.writelines(L) # įrašoma į duomenų failą informacija L masyve.
     duomenys.close() # uždaromas duomenų failas (į jį rašyti nebereikės)
-    check50.run("./balsavimas").exit(0) # tai yra komanda, kuri yra tas pats kaip per code blocks paspausti F9
+    check50.run("./balsavimas") # tai yra komanda, kuri yra tas pats kaip per code blocks paspausti F9
     with open("Rezultatai.txt") as m: # atidaromas Rezultatai.txt failas
         rez = m.read().split() # nuskaitomas Rezultatai.txt failas ir duomenys įdedami į rez masyvą
     ats = ["37", "132", "55", "1", "6", "7", "3"] # tai yra informacija, kuri turi būti Rezultatų faile
