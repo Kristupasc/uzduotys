@@ -54,7 +54,7 @@ def test1():
     if not eilutes: #jeigu rezultatų failė nėra eilučių (jis tuščias)
         raise check50.Failure("U1rez.txt yra tusčias") # Išvedama, jog rezultatų failas yra tuščias. Tolesnės eilutės nebėra skaitomos.
     if eilutes != eilutesAts: # tikrinama, ar eilučių kiekis nėra lygus teisingu eilučių kiekiu.
-        raise check50.Failure("U1rez.txt išvedė per daug eilučių.") # Išvedama, jog rezultatų failas yra užrašytas neteisingai.
+        raise check50.Failure("U1rez.txt yra užrašytas neteisingai.") # Išvedama, jog rezultatų failas yra užrašytas neteisingai.
 # jeigu funkcija nuėjo iki šios vietos be jokių trugdžių, funkcija išveda: Informacija faile Rezultatai.txt yra išvedama teisingai.
         
 @check50.check(kompiliuojasi)
